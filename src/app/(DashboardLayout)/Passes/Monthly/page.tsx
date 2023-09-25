@@ -149,13 +149,13 @@ const Dashboard = () => {
     };
   };
 
-  useEffect(() => {
-    if (
-      !authD.user
-    ) {
-      router.push("/login");
-    }
-  }, [authD, router]);
+  // useEffect(() => {
+  //   if (
+  //     !authD.user
+  //   ) {
+  //     router.push("/login");
+  //   }
+  // }, [authD, router]);
 
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">
