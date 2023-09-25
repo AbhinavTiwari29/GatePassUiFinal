@@ -225,6 +225,14 @@ const Dashboard = () => {
     setFormattedNames(namesArray);
   }, [formFields]);
 
+  useEffect(() => {
+    if (
+      !auth.user
+    ) {
+      router.push("/login");
+    }
+  }, [auth, router]);
+
 
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">
